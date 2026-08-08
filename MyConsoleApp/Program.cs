@@ -7,7 +7,6 @@ var appSettings = builder.Configuration.GetSection("AppSettings").Get<AppSetting
 
 Console.WriteLine($"Environment: {appSettings.EnvironmentName}");
 Console.WriteLine($"Greeting: {appSettings.Greeting}");
-Console.WriteLine($"Connection: {appSettings.ConnectionString}");
 
 public sealed class AppSettings
 {

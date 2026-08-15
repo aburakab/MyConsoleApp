@@ -9,14 +9,16 @@ var appSettings = builder.Configuration.GetSection("AppSettings").Get<AppSetting
 Console.WriteLine($"Environment: {appSettings.EnvironmentName}");
 Console.WriteLine($"Greeting: {appSettings.Greeting}");
 Console.WriteLine($"Password: {appSettings.Password}");
-Console.WriteLine($"Password: {appSettings.MaxNumber}");
+Console.WriteLine($"Max Num: {appSettings.MaxNumber}");
 
 var p = new Person();
 p.Id = 100;
 p.Age = 25;
-p.Name = "Ali";
+p.FirstName = "Ali";
+p.LastName = "Ahmad";
+p.DateOfBirth = new DateOnly(2008, 1, 1);
 
-Console.WriteLine(p.Age);
+Console.WriteLine($"DoB: {p.DateOfBirth}");
 
 public sealed class AppSettings
 {

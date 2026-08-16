@@ -18,6 +18,7 @@ p.FirstName = "Ali";
 p.LastName = "Ahmad";
 p.DateOfBirth = new DateOnly(2008, 1, 1);
 p.Nationality = "Jordanian";
+p.PlaceOfBirth = "Kuwait";
 
 Console.WriteLine($"DoB: {p.DateOfBirth}");
 

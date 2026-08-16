@@ -13,7 +13,6 @@ Console.WriteLine($"Max Num: {appSettings.MaxNumber}");
 
 var p = new Person();
 p.Id = 100;
-p.Age = 25;
 p.FirstName = "Ali";
 p.LastName = "Ahmad";
 p.DateOfBirth = new DateOnly(2008, 1, 1);
@@ -21,6 +20,7 @@ p.Nationality = "Jordanian";
 p.PlaceOfBirth = "Kuwait";
 
 Console.WriteLine($"DoB: {p.DateOfBirth}");
+Console.WriteLine($"Age: {p.Age}");
 
 public sealed class AppSettings
 {
